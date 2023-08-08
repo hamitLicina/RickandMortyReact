@@ -1,0 +1,13 @@
+.footer-container {
+    background-color: var(--primary-bg);
+    padding: 10px;
+    color: var(--white);
+}
+
+.contact-btn {
+    cursor: pointer;
+    background-color: transparent;
+    color: var(--white);
+    border: none;
+    font-size: 16px;
+}
