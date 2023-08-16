@@ -35,7 +35,6 @@ function CharacterDetails() {
         }, [] // Runs only once when the page loads.
     )
 
-
   return (
     <div className='details-container'>
         <img src={character?.image} />
