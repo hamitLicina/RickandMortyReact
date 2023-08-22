@@ -1,5 +1,6 @@
 import React from 'react'
 import './CharacterCard.css'
+import { Link } from 'react-router-dom'
 
 
 function CharacterCard({character}) {
@@ -7,7 +8,7 @@ function CharacterCard({character}) {
     <div className='character-card'>
         <img src={character.image} />
         <p>{character.name}</p>
-        <a href={`/details/${character.id}`}>See Details</a>
+        <Link to={`/details/${character.id}`}>See Details</Link>
     </div>
   )
 }

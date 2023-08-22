@@ -17,3 +17,12 @@
     color: var(--white);
     margin-left: 20px;
 }
+
+.header-dark {
+    background-color: black;
+    border-bottom: solid 1px gray;
+}
+
+.theme-button-dark {
+    background-color: var(--dark-theme-btn);
+}

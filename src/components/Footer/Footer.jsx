@@ -1,6 +1,8 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import './Footer.css'
 import Modal from 'react-modal';
+import { ThemeContext } from '../../contexts/ThemeContext';
+
 
 const customStyles = {
   content: {
@@ -22,11 +24,15 @@ Modal.setAppElement(document.getElementById('root'));
 
 
 function Footer() {
+      // Change to use global state
+    // NOTE {} Not []
+    const {darkMode, setDarkMode} = useContext(ThemeContext)
+
   // I need to create the State to control my modal
   const [isOpen, setIsOpen] = React.useState(false)
 
   return (
-    <div className="footer-container" >
+    <div className={darkMode ? 'footer-container footer-dark' : 'footer-container'} >
         <button className="contact-btn" onClick={() => setIsOpen(true)}>Contact Us</button>
         <Modal
         isOpen={isOpen}
