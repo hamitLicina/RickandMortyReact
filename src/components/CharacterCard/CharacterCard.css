@@ -31,3 +31,13 @@
     color: var(--white);
     cursor: pointer;
 }
+
+.heart-icon {
+    color: var(--primary-bg);
+    font-size: 20px;
+    cursor: pointer;
+    margin-left: 20px;
+    position: absolute;
+    bottom: 15px;
+    left: 0;
+}
