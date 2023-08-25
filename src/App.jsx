@@ -11,9 +11,7 @@ import ThemeContextProvider from './contexts/ThemeContext'
 import MyFavorites from './pages/MyFavorites/MyFavorites'
 import FavoritesContextProvider from './contexts/FavoritesContext'
 
-
 function App() {
-  
 
   return (
     <>

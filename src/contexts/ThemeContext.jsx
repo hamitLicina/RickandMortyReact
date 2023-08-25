@@ -1,6 +1,5 @@
 import { useState, createContext, useEffect } from 'react'
 
-
 // First I need to create this context "thing"
 export const ThemeContext = createContext()
 
@@ -29,7 +28,7 @@ export default function ThemeContextProvider(props){
             console.log('dark mode is now', darkMode)
             // I need to save the value of darkMode to localStorage
             localStorage.setItem('darkMode', JSON.stringify(darkMode))
-        }, [darkMode]
+        }, [darkMode]  // This runs whenever the stage changes
     )
 
     return(

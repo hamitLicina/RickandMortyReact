@@ -4,12 +4,10 @@ import { Link } from 'react-router-dom'
 import { FaHeart, FaRegHeart } from "react-icons/fa";
 import { FavoritesContext } from '../../contexts/FavoritesContext';
 
-
 function CharacterCard({character}) {
   // I need access to global context
   // NOTE this going to be {} not []
   const {addCharacter, favorites, removeCharacter} = useContext(FavoritesContext)
-
 
   // We are going to test create variable to test conditional rendering
   // const isFavorite = false;

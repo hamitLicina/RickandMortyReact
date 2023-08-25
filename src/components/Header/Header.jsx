@@ -15,7 +15,6 @@ function Header() {
   // NOTE {} Not []
   const {darkMode, setDarkMode} = useContext(ThemeContext)
 
-
   return (
     <div className={darkMode ? 'header-container header-dark' : 'header-container'}>
         <div>

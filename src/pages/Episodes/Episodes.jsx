@@ -1,9 +1,14 @@
-import React, {useEffect, useState} from 'react'
+import React, {useEffect, useState, useContext} from 'react'
 import './Episodes.css'
 import axios from 'axios'
 import CharacterCard from '../../components/CharacterCard/CharacterCard'
+import { ThemeContext } from '../../contexts/ThemeContext'
 
 function Episodes() {
+  // Change to use global state
+  // NOTE {} Not []
+  const {darkMode, setDarkMode} = useContext(ThemeContext)
+
   // When the user chooses an episodes number, the page shows the infos and characters about that episode
 
   // Create state to hold the option numbers
@@ -44,7 +49,6 @@ function Episodes() {
     // Store this value in state
     setSelectedOption(e.target.value)
     // I could call the function here to get data from api
-
   }
 
   useEffect(
@@ -82,9 +86,8 @@ function Episodes() {
     }
   }
 
-
   return (
-    <div className='episodes-container'>
+    <div className={darkMode ? 'episodes-container episodes-dark' : 'episodes-container'}>
       <div>
         <label htmlFor='select-episode'>Select an Episode</label>
         <select id='select-episode' onChange={handleSelectChange}>

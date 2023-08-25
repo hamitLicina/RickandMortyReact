@@ -5,7 +5,6 @@ import CharacterCard from '../../components/CharacterCard/CharacterCard'
 import Search from '../../components/Search/Search'
 import { ThemeContext } from '../../contexts/ThemeContext'
 
-
 function Homepage() {
     // Change to use global state
     // NOTE {} Not []
@@ -40,8 +39,6 @@ function Homepage() {
             {
                 characters.map(item => < CharacterCard character={item}
                     key={item.id} />)
-
-
                 // characters.map(item => <p key={item.id}>{item.name}</p>)
             }
         </div>

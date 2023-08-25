@@ -1,26 +1,30 @@
-.episodes-container{
+.episodes-container {
     min-height: 100vh;
     padding: 25px;
     display: flex;
 }
 
-.character-container{
+.character-container {
     display: flex;
     flex-wrap: wrap;
 }
 
-#select-episode{
+#select-episode {
     border:solid 2px var(--primary-bg);
     border-radius:5px;
     padding:8px 16px;
 }
-.episode-info{
+.episode-info {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.episodes-container form{
+.episodes-container form {
     padding:0 25px;
 }
 
+.episodes-dark {
+    background-color: black;
+    color: white;
+ }
