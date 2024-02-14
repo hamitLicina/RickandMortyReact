@@ -37,7 +37,7 @@
 }
 
 .modal-close-btn:hover {
-  /* color: var(--primary-bg); */
+    /* color: var(--primary-bg); */
     color: red;
 }
 
@@ -47,7 +47,7 @@ form label {
 }
 
 form input,
-form textarea { 
+form textarea {
     width: 100%;
     padding: 10px;
     border: none;
@@ -75,6 +75,6 @@ form button[type='submit'] {
 }
 
 form button[type='submit']:hover {
-  /* background-color: var(--primary-bg); */
+    /* background-color: var(--primary-bg); */
     background-color: red;
 }

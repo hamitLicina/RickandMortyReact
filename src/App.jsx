@@ -16,21 +16,21 @@ function App() {
   return (
     <>
       <BrowserRouter>
-      <ThemeContextProvider>
-      <FavoritesContextProvider>
-        <Header />
+        <ThemeContextProvider>
+          <FavoritesContextProvider>
+            <Header />
 
-        <Routes>
-          <Route path='/' element={<Homepage />} />
-          <Route path='/about' element={<About />} />
-          <Route path='/episodes' element={<Episodes />} />
-          <Route path='/favorites' element={<MyFavorites />} />
-          <Route path='/details/:characterId' element={<CharacterDetails />} />
-        </Routes>        
+            <Routes>
+              <Route path='/' element={<Homepage />} />
+              <Route path='/about' element={<About />} />
+              <Route path='/episodes' element={<Episodes />} />
+              <Route path='/favorites' element={<MyFavorites />} />
+              <Route path='/details/:characterId' element={<CharacterDetails />} />
+            </Routes>
 
-        <Footer />
-      </FavoritesContextProvider>
-      </ThemeContextProvider>
+            <Footer />
+          </FavoritesContextProvider>
+        </ThemeContextProvider>
       </BrowserRouter>
     </>
   )

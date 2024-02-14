@@ -3,8 +3,8 @@ import { useState, createContext, useEffect } from 'react'
 // First I need to create this context "thing"
 export const ThemeContext = createContext()
 
-export default function ThemeContextProvider(props){
-    
+export default function ThemeContextProvider(props) {
+
     // I need to create my Global state in here !!!
     const [darkMode, setDarkMode] = useState(false)
 
@@ -31,8 +31,8 @@ export default function ThemeContextProvider(props){
         }, [darkMode]  // This runs whenever the stage changes
     )
 
-    return(
-        <ThemeContext.Provider value={{darkMode, setDarkMode}} >
+    return (
+        <ThemeContext.Provider value={{ darkMode, setDarkMode }} >
             {props.children}
         </ThemeContext.Provider>
     )

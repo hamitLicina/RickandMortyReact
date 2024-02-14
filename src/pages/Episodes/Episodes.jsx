@@ -1,4 +1,4 @@
-import React, {useEffect, useState, useContext} from 'react'
+import React, { useEffect, useState, useContext } from 'react'
 import './Episodes.css'
 import axios from 'axios'
 import CharacterCard from '../../components/CharacterCard/CharacterCard'
@@ -7,7 +7,7 @@ import { ThemeContext } from '../../contexts/ThemeContext'
 function Episodes() {
   // Change to use global state
   // NOTE {} Not []
-  const {darkMode, setDarkMode} = useContext(ThemeContext)
+  const { darkMode, setDarkMode } = useContext(ThemeContext)
 
   // When the user chooses an episodes number, the page shows the infos and characters about that episode
 
@@ -19,7 +19,7 @@ function Episodes() {
   const [selectedEpisode, setSelectedEpisode] = useState('')
   // Create state for the characters
   const [characterList, setCharacterList] = useState([])
-  
+
   // I need to know and find out how many episodes there are in order to build dropdown element
 
   // https://rickandmortyapi.com/api/episode
@@ -28,18 +28,18 @@ function Episodes() {
     () => {
       //  Make Api call to find out number of episodes
       axios.get(`https://rickandmortyapi.com/api/episode`)
-      .then(res => {
-        // console.log(res.data.info.count)
-        // I need to create an array with [1, 2, 3, ..., 51]
-        const nums = []
-        for (let i = 1; i <= res.data.info.count; i++) {
-          nums.push(i)
-        }
-        // console.log(nums)
-        // Store in state
-        setOptions(nums)
-      })
-      .catch(err => console.log(err))
+        .then(res => {
+          // console.log(res.data.info.count)
+          // I need to create an array with [1, 2, 3, ..., 51]
+          const nums = []
+          for (let i = 1; i <= res.data.info.count; i++) {
+            nums.push(i)
+          }
+          // console.log(nums)
+          // Store in state
+          setOptions(nums)
+        })
+        .catch(err => console.log(err))
 
     }, [] // That runs one time when the page loads
   )
@@ -56,14 +56,14 @@ function Episodes() {
       // console.log('You selected', selectedOption)
       // Call function to get data from api
       fetchEpisodeData()
-    }, [selectedOption] // This meanes runs anytime this stage changes
+    }, [selectedOption] // This means runs anytime this stage changes
   )
 
   // https://rickandmortyapi.com/api/episode/28
 
   const fetchEpisodeData = async () => {
     console.log('fetch data')
-    try{
+    try {
       // We need to make api call for this episode
       const res = await axios.get(`https://rickandmortyapi.com/api/episode/${selectedOption}`)
       // console.log(res.data)
@@ -77,11 +77,11 @@ function Episodes() {
           return axios.get(url).then(res => res.data)
         })
       )
-        console.log(episodeCharacters)
-        // Store this in state
-        setCharacterList(episodeCharacters)
+      console.log(episodeCharacters)
+      // Store this in state
+      setCharacterList(episodeCharacters)
     }
-    catch{
+    catch {
       console.log(err)
     }
   }
@@ -104,7 +104,7 @@ function Episodes() {
         </div>
         <div className='character-container'>
           {
-            characterList.map(item=><CharacterCard character={item}
+            characterList.map(item => <CharacterCard character={item}
               key={item.id} />)
           }
         </div>

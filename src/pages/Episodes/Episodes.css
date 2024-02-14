@@ -10,10 +10,11 @@
 }
 
 #select-episode {
-    border:solid 2px var(--primary-bg);
-    border-radius:5px;
-    padding:8px 16px;
+    border: solid 2px var(--primary-bg);
+    border-radius: 5px;
+    padding: 8px 16px;
 }
+
 .episode-info {
     display: flex;
     flex-direction: column;
@@ -21,10 +22,10 @@
 }
 
 .episodes-container form {
-    padding:0 25px;
+    padding: 0 25px;
 }
 
 .episodes-dark {
     background-color: black;
     color: white;
- }
+}

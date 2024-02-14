@@ -13,8 +13,8 @@ a {
 }
 
 :root {
-  --primary-bg:rgb(102,92,171);
-  --light-theme-btn:#430f58;
+  --primary-bg: rgb(102, 92, 171);
+  --light-theme-btn: #430f58;
   --dark-theme-btn: #c3195d;
   --white: white;
 }

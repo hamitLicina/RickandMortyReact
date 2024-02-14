@@ -5,8 +5,13 @@
 .about-dark {
     background-color: black;
     color: white;
- }
+}
 
-.about-container h1, .about-container p {
+.about-container h1,
+.about-container p {
     padding: 20px;
+}
+
+.banner-image {
+    min-width: 100vw;
 }

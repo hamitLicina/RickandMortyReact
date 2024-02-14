@@ -4,10 +4,10 @@ import { Link } from 'react-router-dom'
 import { FaHeart, FaRegHeart } from "react-icons/fa";
 import { FavoritesContext } from '../../contexts/FavoritesContext';
 
-function CharacterCard({character}) {
+function CharacterCard({ character }) {
   // I need access to global context
   // NOTE this going to be {} not []
-  const {addCharacter, favorites, removeCharacter} = useContext(FavoritesContext)
+  const { addCharacter, favorites, removeCharacter } = useContext(FavoritesContext)
 
   // We are going to test create variable to test conditional rendering
   // const isFavorite = false;
@@ -25,15 +25,15 @@ function CharacterCard({character}) {
 
   return (
     <div className='character-card'>
-        <img src={character.image} />
-        <p>{character.name}</p>
-        <Link to={`/details/${character.id}`}>See Details</Link>
-        {
-          isFavorite ? 
-          <FaHeart className='heart-icon' onClick={() => removeCharacter(character.id)}/>
+      <img src={character.image} />
+      <p>{character.name}</p>
+      <Link to={`/details/${character.id}`}>See Details</Link>
+      {
+        isFavorite ?
+          <FaHeart className='heart-icon' onClick={() => removeCharacter(character.id)} />
           :
-          <FaRegHeart className='heart-icon' onClick={() => addCharacter(character)}/>
-        }
+          <FaRegHeart className='heart-icon' onClick={() => addCharacter(character)} />
+      }
     </div>
   )
 }

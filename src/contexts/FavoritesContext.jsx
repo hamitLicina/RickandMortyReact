@@ -3,8 +3,8 @@ import { useState, createContext, useEffect } from 'react'
 // First I need to create this context "thing"
 export const FavoritesContext = createContext()
 
-export default function FavoritesContextProvider(props){
-      
+export default function FavoritesContextProvider(props) {
+
     // I need to create my Global state in here !!!
     const [favorites, setFavorites] = useState([])
 
@@ -26,7 +26,7 @@ export default function FavoritesContextProvider(props){
     // Set up useEffect to run anytime Favorites changes 
     useEffect(
         () => {
-            
+
             // I need to save Favorites to localStorage
             localStorage.setItem('favoritesList', JSON.stringify(favorites))
         }, [favorites]  // Runs whenever the stage changes
@@ -52,8 +52,8 @@ export default function FavoritesContextProvider(props){
         setFavorites(newFavorites)
     }
 
-    return(
-        <FavoritesContext.Provider value={{addCharacter, favorites, removeCharacter}} >
+    return (
+        <FavoritesContext.Provider value={{ addCharacter, favorites, removeCharacter }} >
             {props.children}
         </FavoritesContext.Provider>
     )
