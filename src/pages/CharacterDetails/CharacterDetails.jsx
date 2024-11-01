@@ -4,6 +4,7 @@ import { useParams } from 'react-router-dom'
 import axios from 'axios'
 
 
+
 function CharacterDetails() {
     // This page shows details of a specific character
     // When the page loads

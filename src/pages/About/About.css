@@ -1,17 +1,17 @@
 .about-container {
-    min-height: 100vh;
+  min-height: 100vh;
 }
 
 .about-dark {
-    background-color: black;
-    color: white;
+  background-color: black;
+  color: white;
 }
 
 .about-container h1,
 .about-container p {
-    padding: 20px;
+  padding: 20px;
 }
 
 .banner-image {
-    min-width: 100vw;
+  min-width: 100vw;
 }

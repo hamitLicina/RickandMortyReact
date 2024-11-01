@@ -4,6 +4,8 @@ import { Link } from 'react-router-dom'
 import { FaHeart, FaRegHeart } from "react-icons/fa";
 import { FavoritesContext } from '../../contexts/FavoritesContext';
 
+
+
 function CharacterCard({ character }) {
   // I need access to global context
   // NOTE this going to be {} not []

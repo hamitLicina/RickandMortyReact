@@ -4,6 +4,8 @@ import { FavoritesContext } from '../../contexts/FavoritesContext'
 import CharacterCard from '../../components/CharacterCard/CharacterCard'
 import { ThemeContext } from '../../contexts/ThemeContext'
 
+
+
 function MyFavorites() {
   // Change to use global state
   // NOTE {} Not []

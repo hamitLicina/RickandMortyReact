@@ -4,6 +4,8 @@ import axios from 'axios'
 import CharacterCard from '../../components/CharacterCard/CharacterCard'
 import { ThemeContext } from '../../contexts/ThemeContext'
 
+
+
 function Episodes() {
   // Change to use global state
   // NOTE {} Not []

@@ -1,20 +1,20 @@
 .home-container {
-    min-height: 100vh;
-    padding: 30px 10px;
+  min-height: 100vh;
+  padding: 30px 10px;
 }
 
 .home-dark {
-    background-color: black;
-    color: white;
+  background-color: black;
+  color: white;
 }
 
 .home-container h1 {
-    text-align: center;
-    margin-bottom: 40px;
+  text-align: center;
+  margin-bottom: 40px;
 }
 
 .characters-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }

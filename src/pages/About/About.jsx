@@ -3,6 +3,8 @@ import './About.css'
 import banner from '../../assets/banner.jpeg'
 import { ThemeContext } from '../../contexts/ThemeContext'
 
+
+
 function About() {
   // Change to use global state
   // NOTE {} Not []

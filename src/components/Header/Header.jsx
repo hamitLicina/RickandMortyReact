@@ -3,6 +3,8 @@ import './Header.css'
 import { Link } from 'react-router-dom'
 import { ThemeContext } from '../../contexts/ThemeContext'
 
+
+
 function Header() {
 
   // I am going to create a variable to control darkmode

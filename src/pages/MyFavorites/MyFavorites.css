@@ -1,18 +1,18 @@
 .favorites-container {
-    min-height: 90vh;
+  min-height: 90vh;
 }
 
 .favorites-dark {
-    background-color: black;
-    color: white;
+  background-color: black;
+  color: white;
 }
 
 .favorites-container h1 {
-    text-align: center;
+  text-align: center;
 }
 
 .favorite-characters {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }

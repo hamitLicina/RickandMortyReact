@@ -2,6 +2,8 @@ import React from 'react'
 import './Search.css'
 import axios from 'axios';
 
+
+
 function Search({ setCharacters }) {
   // We need create state to hold user input 
   const [query, setQuery] = React.useState('');

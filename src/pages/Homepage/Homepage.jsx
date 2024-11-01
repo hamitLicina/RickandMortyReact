@@ -5,6 +5,8 @@ import CharacterCard from '../../components/CharacterCard/CharacterCard'
 import Search from '../../components/Search/Search'
 import { ThemeContext } from '../../contexts/ThemeContext'
 
+
+
 function Homepage() {
     // Change to use global state
     // NOTE {} Not []
